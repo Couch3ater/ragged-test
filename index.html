@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Ragged Mountain Resort</title>
+  <meta name="author" content="Connor Tangney">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Interactive views of consolidated TSA claim data from year 2010 through year 2013">
+  <meta name="keywords" content="List, Of, Keywords, Here">
+
+  <!-- js pre-load -->
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- spectre css -->
+  <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+
+  <!-- normalize css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+
+  <!-- custom css -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <!-- MOBILE TOP BAR -->
+  <div class="navbar mobile-bar">
+    <section class="navbar-section">
+      <i class="material-icons">menu</i>
+    </section>
+    <section class="navbar-section">
+      <i class="material-icons">wb_sunny</i>&nbsp;&nbsp;&nbsp;&nbsp;Weather
+    </section>
+  </div>
+
+  <!-- COVER IMAGE -->
+  <div class="columns">
+    <div class="column col-sm-12 cover-photo">
+      <img src="res/img/homepage/cover-photo.jpg" class="img-responsive" alt="Ragged Mountain Resort Cover Photo">
+      <!-- <img src="res/img/ragged-leaf-orange.svg" class="cover-photo-overlay img-responsive" alt="Ragged Leaf" /> -->
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <div class="navbar hide-md">
+    <section class="navbar-section">
+      <a href="#" class="btn btn-link">Buy Now</a>
+      <a href="#" class="btn btn-link">Winter</a>
+      <a href="#" class="btn btn-link">Summer</a>
+    </section>
+    <section class="navbar-center">
+      <a href="index.html"><img src="res/img/ragged-leaf-white.png" class="navbar-logo" alt="Ragged Mountain Logo" title="Ragged Leaf" /></a>
+    </section>
+    <section class="navbar-section">
+      <a href="#" class="btn btn-link">Dining</a>
+      <a href="#" class="btn btn-link">Weddings</a>
+      <a href="#" class="btn btn-link">Lodging</a>
+    </section>
+  </div>
+
+  <!-- CONTAINER -->
+  <div class="container">
+    <div class="columns">
+      <div class="column col-xs-12 col-md-12 col-lg-10 col-10 col-mx-auto text-center">
+        <h1>The Latest from Ragged Mountain Resort</h1>
+        <ul class="tab tab-block">
+          <li class="tab-item">
+            <a href="#">Social</a>
+          </li>
+          <li class="tab-item active">
+            <a href="#">Blog</a>
+          </li>
+          <li class="tab-item">
+            <a href="#">Video</a>
+          </li>
+        </ul>
+        <div class="card blog-card col-mx-auto">
+          <div class="card-image">
+            <img src="res/img/homepage/blog-post.jpg" class="img-responsive" alt="Blog post thumbnail">
+          </div>
+          <div class="card-header">
+            <div class="card-title h5">Blog Posty Post Goes Here</div>
+            <div class="card-subtitle text-gray">A small amount of information.</div>
+          </div>
+          <div class="card-body text-ellipsis">
+            Ullamcorper varius parturient dolor suspendisse curabitur quisque curae vulputate ac parturient hendrerit penatibus habitant tristique per parturient diam consectetur ullamcorper parturient dapibus laoreet a cum a id ut et. Vestibulum sociis condimentum tristique himenaeos sem leo hendrerit volutpat vulputate mi maecenas nascetur parturient phasellus platea sit duis nibh dictumst a faucibus pretium curabitur maecenas et scelerisque sem. Vestibulum nam quam vestibulum luctus gravida purus nec torquent interdum vestibulum vestibulum habitant id parturient luctus adipiscing fusce vestibulum sed rutrum a suscipit. Sapien id penatibus pulvinar a vel dui fermentum ante vivamus class ullamcorper imperdiet a curabitur eu augue cubilia parturient. Tortor suscipit quam elit a metus ac a dis cum ad a scelerisque parturient nostra fermentum orci penatibus congue curabitur scelerisque a consequat ridiculus ac hendrerit.
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-primary">Read More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns promo-box-container col-mx-auto">
+      <div class="column col-xs-12 col-md-12 col-6 promo-box">
+        <img src="res/img/homepage/promo-1.jpg" class="" alt="Promo box image 1">
+        <span class="promo-text">
+          <h5>GET YOUR</h5>
+          <h5>TICKETS TODAY</h5>
+        </span>
+      </div>
+      <div class="column col-xs-12 col-md-12 col-6 promo-box">
+        <img src="res/img/homepage/promo-2.jpg" class="" alt="Promo box image 2">
+        <span class="promo-text">
+          <h5>BOOK YOUR</h5>
+          <h5>WEDDING TODAY</h5>
+        </span>
+      </div>
+      <div class="column col-xs-12 col-md-12 col-6 promo-box">
+        <img src="res/img/homepage/promo-3.jpg" class="" alt="Promo box image 3">
+        <span class="promo-text">
+          <h5>CHECK OUT THESE</h5>
+          <h5>LODGING DEALS</h5>
+        </span>
+      </div>
+      <div class="column col-xs-12 col-md-12 col-6 promo-box">
+        <img src="res/img/homepage/promo-4.jpg" class="" alt="Promo box image 4">
+        <span class="promo-text">
+          <h5>MISSION AFFORDABLE</h5>
+          <h5>SEASON PASS</h5>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="ragged-footy">
+      <div class="footy-left">
+        <h6>&#169; Ragged Mountain Resort</h6>
+      </div>
+      <div class="footy-right">
+        <ul>
+          <li><a href="#">Buy Now</a></li>
+          <li><a href="#">Winter</a></li>
+          <li><a href="#">Summer</a></li>
+          <li><a href="#">Dining</a></li>
+          <li><a href="#">Weddings</a></li>
+          <li><a href="#">Lodging</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
