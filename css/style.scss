@@ -170,15 +170,21 @@ footer{
 			color: #FFF;
 			background-color: $dark-orange;
 		}
+		.accordion[open].submenu{
+			transform: none;
+		}
+		.submenu .accordion-header {
+			color: $dark-grey;
+		}
 	}
 }
 
 
 /*  CUSTOM  */
 #mobile-links {
-	padding-left: 4rem;
+	padding-left: 2rem;
 	.menu {
-		padding: 0.15rem 1rem 0.35rem 1.25rem;
+		padding: 0.1rem 1rem 0.35rem 0.35rem;
 	}
 }
 .mobile-bar {
