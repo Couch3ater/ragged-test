@@ -53,6 +53,10 @@ footer {
             text-decoration: none;
             color: #FFF; }
 
+/*  MEDIA QUERIES  */
+@media (max-width: 840px) {
+  .show-md {
+    display: flex !important; } }
 /*  OVERRIDES  */
 .navbar {
   background-color: #E3782E; }
@@ -96,16 +100,44 @@ footer {
 .tab .tab-item a:focus, .tab .tab-item a:hover {
   color: #CE5C0D; }
 
+.accordion-header {
+  font-weight: 600;
+  color: #FFF; }
+
+.accordion-header:hover {
+  cursor: pointer; }
+
+.accordion-body .menu.menu-nav .menu-item {
+  color: #4A4A4A; }
+.accordion-body .menu.menu-nav .menu-item > a:hover, .accordion-body .menu.menu-nav .menu-item > a:focus {
+  color: #FFF;
+  background-color: #CE5C0D; }
+
 /*  CUSTOM  */
+#mobile-links {
+  padding-left: 4rem; }
+  #mobile-links .menu {
+    padding: 0.15rem 1rem 0.35rem 1.25rem; }
+
 .mobile-bar {
-  padding: 0.35rem 1rem 0.35rem 1rem; }
+  padding: 0.35rem 1rem 0.35rem 1rem;
+  max-height: 55px;
+  position: fixed;
+  z-index: 100;
+  width: 100vw; }
   .mobile-bar .navbar-section {
     color: #FFF;
     padding: 0.35rem 1rem 0.35rem 1rem;
     justify-content: flex-start;
     align-items: center; }
+    .mobile-bar .navbar-section .hamburgerBtn:hover {
+      cursor: pointer;
+      color: #FFF; }
   .mobile-bar .navbar-section:not(:first-child):last-child {
     justify-content: flex-end; }
+
+.mobile-nav-open {
+  max-height: 100vh !important; }
 
 .cover-photo {
   max-height: 65vh;
@@ -170,5 +202,21 @@ footer {
       /* IE8 */
       filter: progid:DXImageTransform.Microsoft.Matrix(M11=1.5, M12=0, M21=0, M22=1.5, SizingMethod='auto expand');
       /* IE6 and 7 */ }
+
+/*  HELPERS  */
+.flex-top {
+  align-items: flex-start !important; }
+
+.ragged-orange {
+  color: #E3782E; }
+
+.dark-orange {
+  color: #CE5C0D; }
+
+.ragged-blue {
+  color: #2F708F; }
+
+.dark-grey {
+  color: #4A4A4A; }
 
 /*# sourceMappingURL=style.css.map */

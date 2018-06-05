@@ -32,11 +32,121 @@
   <![endif]-->
 
   <!-- MOBILE TOP BAR -->
-  <div class="navbar mobile-bar">
-    <section class="navbar-section">
-      <i class="material-icons">menu</i>
+  <div class="navbar show-md mobile-bar">
+    <section class="navbar-section fixed" id="hamburgerBtn">
+      <a data-target="" class="hamburgerBtn"><i class="material-icons">menu</i></a>
     </section>
-    <section class="navbar-section">
+    <section class="navbar-center d-hide" id="mobile-links">
+
+      <ul class="menu menu-nav">
+        <li class="menu-item">
+          <!-- buy now -->
+          <details class="accordion">
+            <summary class="accordion-header">
+              BUY NOW
+            </summary>
+          </details>
+        </li>
+
+        <li class="menu-item">
+          <!-- winter -->
+          <details class="accordion d-block">
+            <summary class="accordion-header">
+              <i class="icon icon-arrow-right mr-1 dark-grey"></i>
+              WINTER
+            </summary>
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                <li class="menu-item"><a href="">Lift Tickets</a></li>
+                <li class="menu-item"><a href="">Snow Report</a></li>
+                <li class="menu-item"><a href="">Season Passes</a></li>
+                <li class="menu-item"><a href="">Learning Center</a></li>
+                <li class="menu-item"><a href="">Rentals</a></li>
+                <li class="menu-item"><a href="">Tubing</a></li>
+                <li class="menu-item"><a href="">Terrain Park</a></li>
+                <li class="menu-item"><a href="">Mountain Info</a></li>
+                <li class="menu-item"><a href="">Trail Map</a></li>
+                <li class="menu-item"><a href="">Directions</a></li>
+              </ul>
+            </div>
+          </details>
+        </li>
+
+        <li class="menu-item">
+          <!-- summer -->
+          <details class="accordion">
+            <summary class="accordion-header">
+              <i class="icon icon-arrow-right mr-1 dark-grey"></i>
+              SUMMER
+            </summary>
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                <li class="menu-item"><a href="">Mountain Biking</a></li>
+                <li class="menu-item"><a href="">Kayaking</a></li>
+                <li class="menu-item"><a href="">Camping</a></li>
+                <li class="menu-item"><a href="">Concerts</a></li>
+              </ul>
+            </div>
+          </details>
+        </li>
+
+        <li class="menu-item">
+          <!-- dining -->
+          <details class="accordion">
+            <summary class="accordion-header">
+              <i class="icon icon-arrow-right mr-1 dark-grey"></i>
+              DINING
+            </summary>
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                <li class="menu-item"><a href="">Birches Mountain Restaurant</a></li>
+                <li class="menu-item"><a href="">Stone Hearth Bar</a></li>
+                <li class="menu-item"><a href="">Harvest Cafe</a></li>
+                <li class="menu-item"><a href="">Catered Events</a></li>
+              </ul>
+            </div>
+          </details>
+        </li>
+
+        <li class="menu-item">
+          <!-- weddings -->
+          <details class="accordion">
+            <summary class="accordion-header">
+              <i class="icon icon-arrow-right mr-1 dark-grey"></i>
+              WEDDINGS
+            </summary>
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                <li class="menu-item"><a href="">Ragged Mountain Weddings</a></li>
+                <li class="menu-item"><a href="">Wedding Venues</a></li>
+                <li class="menu-item"><a href="">Wedding Gallery</a></li>
+                <li class="menu-item"><a href="">Preferred Vendors</a></li>
+              </ul>
+            </div>
+          </details>
+        </li>
+
+        <li class="menu-item">
+          <!-- lodging -->
+          <details class="accordion">
+            <summary class="accordion-header">
+              <i class="icon icon-arrow-right mr-1 dark-grey"></i>
+              LODGING
+            </summary>
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                <li class="menu-item"><a href="">Ragged Mountain Lodging</a></li>
+                <li class="menu-item"><a href="">New Hampshire Mountain Inn</a></li>
+                <li class="menu-item"><a href="">Cardigan Cabins</a></li>
+                <li class="menu-item"><a href="">Lodging Partners</a></li>
+              </ul>
+            </div>
+          </details>
+        </li>
+      </ul>
+
+    </section>
+    <section class="navbar-section" id="weatherBtn">
       <i class="material-icons">wb_sunny</i>&nbsp;&nbsp;&nbsp;&nbsp;Weather
     </section>
   </div>
@@ -150,6 +260,17 @@
       </div>
     </div>
   </footer>
+
+
+<script>
+  $('#hamburgerBtn').bind('click', function(){
+    $('.mobile-bar').toggleClass('mobile-nav-open');
+    $('#mobile-links').toggleClass('d-hide');
+    $('#mobile-links').toggleClass('flex-top');
+    $('#weatherBtn').toggleClass('d-hide');
+  });
+</script>
+
 
 </body>
 </html>
