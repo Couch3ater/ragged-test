@@ -124,7 +124,6 @@ footer {
 .mobile-bar {
   padding: 0.35rem 1rem 0.35rem 1rem;
   max-height: 55px;
-  position: fixed;
   z-index: 100;
   width: 100vw; }
   .mobile-bar .navbar-section {
@@ -155,7 +154,8 @@ footer {
 .card-catalog {
   width: 100%;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  overflow: visible; }
   .card-catalog #social-card {
     max-width: 750px;
     margin-top: 1rem; }
@@ -168,15 +168,6 @@ footer {
   .card-catalog .disabled-card {
     pointer-events: none;
     opacity: .5; }
-
-.move-left {
-  transform: translateX(-100%) !important; }
-
-.move-mid {
-  transform: translateX(0) !important; }
-
-.move-right {
-  transform: translateX(100%) !important; }
 
 .promo-box-container {
   max-width: 750px;
