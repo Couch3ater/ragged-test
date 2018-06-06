@@ -24,6 +24,7 @@ $navbar-height: 100px;
 html, body {
 	height: 100%;
 	width: 100%;
+	overflow-x: hidden;
 }
 a {
 	color: #FFF;
@@ -103,6 +104,9 @@ footer{
 /*  OVERRIDES  */
 .navbar {
 	background-color: $ragged-orange;
+	position: sticky;
+	top: 0;
+	z-index: 100;
 	.navbar-section {
 		align-items: flex-start;
 		a.btn.btn-link {
@@ -207,15 +211,25 @@ footer{
 	max-height: 100vh !important;
 }
 .cover-photo {
-	max-height: 65vh;
-	margin: 0 auto;
+	max-height: 45vh;
 	overflow: hidden;
 	position: relative;
+	text-align: center;
+	width: 100%;
+	.cover-photo-caption {
+		position: absolute;
+		bottom: 0;
+		margin-bottom: -2px;
+		left: 50%; 
+		transform: translate(-50%,0);
+		-moz-transform: translate(-50%,0);
+		-webkit-transform: translate(-50%,0);
+		-o-transform: translate(-50%,0);
+		-ms-transform: translate(-50%,0);
+	}
 }
-.cover-photo-overlay{
-	z-index: 1;
-	position: absolute;
-	top: 40%;
+.cover-photo-caption {
+	max-width: 80%;
 }
 .card-catalog {
 	width: 100%;
