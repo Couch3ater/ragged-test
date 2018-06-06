@@ -170,9 +170,6 @@ footer{
 			color: #FFF;
 			background-color: $dark-orange;
 		}
-		.accordion[open].submenu{
-			transform: none;
-		}
 		.submenu .accordion-header {
 			color: $dark-grey;
 		}
@@ -221,9 +218,26 @@ footer{
 	position: absolute;
 	top: 40%;
 }
-.blog-card {
-	max-width: 750px;
-	margin-top: 1rem;
+.card-catalog {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	#social-card {
+		max-width: 750px;
+		margin-top: 1rem;
+	}
+	#blog-card {
+		max-width: 750px;
+		margin-top: 1rem;
+	}
+	#video-card {
+		max-width: 750px;
+		margin-top: 1rem;
+	}
+	.disabled-card {
+		pointer-events: none;
+		opacity: .5;
+	}
 }
 .promo-box-container {
 	max-width: 750px;

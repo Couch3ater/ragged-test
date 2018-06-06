@@ -112,8 +112,6 @@ footer {
 .accordion-body .menu.menu-nav .menu-item > a:hover, .accordion-body .menu.menu-nav .menu-item > a:focus {
   color: #FFF;
   background-color: #CE5C0D; }
-.accordion-body .menu.menu-nav .accordion[open].submenu {
-  transform: none; }
 .accordion-body .menu.menu-nav .submenu .accordion-header {
   color: #4A4A4A; }
 
@@ -154,9 +152,31 @@ footer {
   position: absolute;
   top: 40%; }
 
-.blog-card {
-  max-width: 750px;
-  margin-top: 1rem; }
+.card-catalog {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+  .card-catalog #social-card {
+    max-width: 750px;
+    margin-top: 1rem; }
+  .card-catalog #blog-card {
+    max-width: 750px;
+    margin-top: 1rem; }
+  .card-catalog #video-card {
+    max-width: 750px;
+    margin-top: 1rem; }
+  .card-catalog .disabled-card {
+    pointer-events: none;
+    opacity: .5; }
+
+.move-left {
+  transform: translateX(-100%) !important; }
+
+.move-mid {
+  transform: translateX(0) !important; }
+
+.move-right {
+  transform: translateX(100%) !important; }
 
 .promo-box-container {
   max-width: 750px;

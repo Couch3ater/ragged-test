@@ -63,7 +63,7 @@
                 <li class="menu-item"><a href="">Season Passes</a></li>
                 <li class="menu-item">
                   <!-- learning center -->
-                  <details class="accordion d-block submenu">
+                  <details class="submenu accordion d-block">
                     <summary class="accordion-header">
                       <i class="icon icon-arrow-right mr-1 dark-grey"></i>
                       Learning Center
@@ -200,31 +200,75 @@
       <div class="column col-xs-12 col-md-12 col-lg-10 col-10 col-mx-auto text-center">
         <h1>The Latest from Ragged Mountain Resort</h1>
         <ul class="tab tab-block">
-          <li class="tab-item">
-            <a href="#">Social</a>
+          <li class="tab-item" id="social-tab">
+            <a href="javascript:void(0);">Social</a>
           </li>
-          <li class="tab-item active">
-            <a href="#">Blog</a>
+          <li class="tab-item active" id="blog-tab">
+            <a href="javascript:void(0);">Blog</a>
           </li>
-          <li class="tab-item">
-            <a href="#">Video</a>
+          <li class="tab-item" id="video-tab">
+            <a href="javascript:void(0);">Video</a>
           </li>
         </ul>
-        <div class="card blog-card col-mx-auto">
-          <div class="card-image">
-            <img src="res/img/homepage/blog-post.jpg" class="img-responsive" alt="Blog post thumbnail">
-          </div>
-          <div class="card-header">
-            <div class="card-title h5">Blog Posty Post Goes Here</div>
-            <div class="card-subtitle text-gray">A small amount of information.</div>
-          </div>
-          <div class="card-body text-ellipsis">
-            Ullamcorper varius parturient dolor suspendisse curabitur quisque curae vulputate ac parturient hendrerit penatibus habitant tristique per parturient diam consectetur ullamcorper parturient dapibus laoreet a cum a id ut et. Vestibulum sociis condimentum tristique himenaeos sem leo hendrerit volutpat vulputate mi maecenas nascetur parturient phasellus platea sit duis nibh dictumst a faucibus pretium curabitur maecenas et scelerisque sem. Vestibulum nam quam vestibulum luctus gravida purus nec torquent interdum vestibulum vestibulum habitant id parturient luctus adipiscing fusce vestibulum sed rutrum a suscipit. Sapien id penatibus pulvinar a vel dui fermentum ante vivamus class ullamcorper imperdiet a curabitur eu augue cubilia parturient. Tortor suscipit quam elit a metus ac a dis cum ad a scelerisque parturient nostra fermentum orci penatibus congue curabitur scelerisque a consequat ridiculus ac hendrerit.
-          </div>
-          <div class="card-footer">
-            <button class="btn btn-primary">Read More</button>
+
+        <div class="container">
+          <div class="card-catalog">
+            <div class="column col-xs-12 col-md-12 col-lg-10 col-10 text-center disabled-card" id="social-card">
+              <span class="card col-mx-auto">
+                <div class="card-image">
+                  <img src="res/img/homepage/blog-post.jpg" class="img-responsive" alt="Blog post thumbnail">
+                </div>
+                <div class="card-header">
+                  <div class="card-title h5">Blog Posty Post Goes Here</div>
+                  <div class="card-subtitle text-gray">A small amount of information.</div>
+                </div>
+                <div class="card-body text-ellipsis">
+                  Ullamcorper varius parturient dolor suspendisse curabitur quisque curae vulputate ac parturient hendrerit penatibus habitant tristique per parturient diam consectetur ullamcorper parturient dapibus laoreet a cum a id ut et. Vestibulum sociis condimentum tristique himenaeos sem leo hendrerit volutpat vulputate mi maecenas nascetur parturient phasellus platea sit duis nibh dictumst a faucibus pretium curabitur maecenas et scelerisque sem. Vestibulum nam quam vestibulum luctus gravida purus nec torquent interdum vestibulum vestibulum habitant id parturient luctus adipiscing fusce vestibulum sed rutrum a suscipit. Sapien id penatibus pulvinar a vel dui fermentum ante vivamus class ullamcorper imperdiet a curabitur eu augue cubilia parturient. Tortor suscipit quam elit a metus ac a dis cum ad a scelerisque parturient nostra fermentum orci penatibus congue curabitur scelerisque a consequat ridiculus ac hendrerit.
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-primary">Read More</button>
+                </div>
+              </span>
+            </div>
+
+            <div class="column col-xs-12 col-md-12 col-lg-10 col-10 text-center" id="blog-card">
+              <span class="card col-mx-auto">
+                <div class="card-image">
+                  <img src="res/img/homepage/blog-post.jpg" class="img-responsive" alt="Blog post thumbnail">
+                </div>
+                <div class="card-header">
+                  <div class="card-title h5">Blog Posty Post Goes Here</div>
+                  <div class="card-subtitle text-gray">A small amount of information.</div>
+                </div>
+                <div class="card-body text-ellipsis">
+                  Ullamcorper varius parturient dolor suspendisse curabitur quisque curae vulputate ac parturient hendrerit penatibus habitant tristique per parturient diam consectetur ullamcorper parturient dapibus laoreet a cum a id ut et. Vestibulum sociis condimentum tristique himenaeos sem leo hendrerit volutpat vulputate mi maecenas nascetur parturient phasellus platea sit duis nibh dictumst a faucibus pretium curabitur maecenas et scelerisque sem. Vestibulum nam quam vestibulum luctus gravida purus nec torquent interdum vestibulum vestibulum habitant id parturient luctus adipiscing fusce vestibulum sed rutrum a suscipit. Sapien id penatibus pulvinar a vel dui fermentum ante vivamus class ullamcorper imperdiet a curabitur eu augue cubilia parturient. Tortor suscipit quam elit a metus ac a dis cum ad a scelerisque parturient nostra fermentum orci penatibus congue curabitur scelerisque a consequat ridiculus ac hendrerit.
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-primary">Read More</button>
+                </div>
+              </span>
+            </div>
+
+            <div class="column col-xs-12 col-md-12 col-lg-10 col-10 text-center disabled-card" id="video-card">
+              <span class="card col-mx-auto">
+                <div class="card-image">
+                  <img src="res/img/homepage/blog-post.jpg" class="img-responsive" alt="Blog post thumbnail">
+                </div>
+                <div class="card-header">
+                  <div class="card-title h5">Blog Posty Post Goes Here</div>
+                  <div class="card-subtitle text-gray">A small amount of information.</div>
+                </div>
+                <div class="card-body text-ellipsis">
+                  Ullamcorper varius parturient dolor suspendisse curabitur quisque curae vulputate ac parturient hendrerit penatibus habitant tristique per parturient diam consectetur ullamcorper parturient dapibus laoreet a cum a id ut et. Vestibulum sociis condimentum tristique himenaeos sem leo hendrerit volutpat vulputate mi maecenas nascetur parturient phasellus platea sit duis nibh dictumst a faucibus pretium curabitur maecenas et scelerisque sem. Vestibulum nam quam vestibulum luctus gravida purus nec torquent interdum vestibulum vestibulum habitant id parturient luctus adipiscing fusce vestibulum sed rutrum a suscipit. Sapien id penatibus pulvinar a vel dui fermentum ante vivamus class ullamcorper imperdiet a curabitur eu augue cubilia parturient. Tortor suscipit quam elit a metus ac a dis cum ad a scelerisque parturient nostra fermentum orci penatibus congue curabitur scelerisque a consequat ridiculus ac hendrerit.
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-primary">Read More</button>
+                </div>
+              </div>
+            </span>
           </div>
         </div>
+
       </div>
     </div>
 
@@ -279,13 +323,120 @@
     </div>
   </footer>
 
-
+<!-- mobile nav menu handler -->
 <script>
   $('#hamburgerBtn').bind('click', function(){
     $('.mobile-bar').toggleClass('mobile-nav-open');
     $('#mobile-links').toggleClass('d-hide');
     $('#mobile-links').toggleClass('flex-top');
     $('#weatherBtn').toggleClass('d-hide');
+  });
+</script>
+
+<!-- card carousel handler -->
+<script>
+  /*  social tab click  */
+  $('#social-tab').bind('click', function(){
+    let cardWidth = $('#social-card').width() + parseInt($('#social-card').css('padding-left')) + parseInt($('#social-card').css('padding-right'));
+    $('.card-catalog').animate({backgroundPositionX:1},{
+      duration: 500,
+      step:function(now, fn){
+        fn.start = now;
+        fn.end = cardWidth;
+          $('.card-catalog').css({
+             '-webkit-transform':'translateX('+now+'px)'
+            ,'-moz-transform':'translateX('+now+'px)'
+            ,'transform':'translateX('+now+'px)'
+        });
+      }
+    });
+    $(this).addClass('active');
+    $('#blog-tab').removeClass('active');
+    $('#video-tab').removeClass('active');
+    $('#social-card').removeClass('disabled-card');
+    $('#blog-card').addClass('disabled-card');
+    $('#video-card').addClass('disabled-card');
+  });
+
+  /*  blog tab click  */
+  $('#blog-tab').bind('click', function(){
+    let cardWidth = $('#blog-card').width() + parseInt($('#blog-card').css('padding-left')) + parseInt($('#blog-card').css('padding-right'));
+    $('.card-catalog').animate({backgroundPositionX:1},{
+      duration: 500,
+      step:function(now, fn){
+        fn.start = now;
+        fn.end = 0;
+          $('.card-catalog').css({
+             '-webkit-transform':'translateX('+now+'px)'
+            ,'-moz-transform':'translateX('+now+'px)'
+            ,'transform':'translateX('+now+'px)'
+        });
+      }
+    });
+    $(this).addClass('active');
+    $('#social-tab').removeClass('active');
+    $('#video-tab').removeClass('active');
+    $('#blog-card').removeClass('disabled-card');
+    $('#social-card').addClass('disabled-card');
+    $('#video-card').addClass('disabled-card');
+  });
+
+  /*  video tab click  */
+  $('#video-tab').bind('click', function(){
+    let cardWidth = $('#video-card').width() + parseInt($('#video-card').css('padding-left')) + parseInt($('#video-card').css('padding-right'));
+    $('.card-catalog').animate({backgroundPositionX:1},{
+      duration: 500,
+      step:function(now, fn){
+        fn.start = now;
+        fn.end = -cardWidth;
+          $('.card-catalog').css({
+             '-webkit-transform':'translateX('+now+'px)'
+            ,'-moz-transform':'translateX('+now+'px)'
+            ,'transform':'translateX('+now+'px)'
+        });
+      }
+    });
+    $(this).addClass('active');
+    $('#blog-tab').removeClass('active');
+    $('#social-tab').removeClass('active');
+    $('#video-card').removeClass('disabled-card');
+    $('#blog-card').addClass('disabled-card');
+    $('#social-card').addClass('disabled-card');
+  });
+
+  /*  window resize  */
+  $(window).resize(function(){
+    if($('#video-tab').hasClass('active')){
+      let cardWidth = $('#video-card').width() + parseInt($('#video-card').css('padding-left')) + parseInt($('#video-card').css('padding-right'));
+      $('.card-catalog').animate({backgroundPositionX:1},{
+        duration: 5,
+        step:function(now, fn){
+          fn.start = now;
+          fn.end = -cardWidth;
+            $('.card-catalog').css({
+               '-webkit-transform':'translateX('+now+'px)'
+              ,'-moz-transform':'translateX('+now+'px)'
+              ,'transform':'translateX('+now+'px)'
+          });
+        }
+      });
+    }
+
+    if($('#social-tab').hasClass('active')){
+      let cardWidth = $('#social-card').width() + parseInt($('#social-card').css('padding-left')) + parseInt($('#social-card').css('padding-right'));
+      $('.card-catalog').animate({backgroundPositionX:1},{
+        duration: 5,
+        step:function(now, fn){
+          fn.start = now;
+          fn.end = cardWidth;
+            $('.card-catalog').css({
+               '-webkit-transform':'translateX('+now+'px)'
+              ,'-moz-transform':'translateX('+now+'px)'
+              ,'transform':'translateX('+now+'px)'
+          });
+        }
+      });
+    }
   });
 </script>
 
