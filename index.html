@@ -199,12 +199,13 @@
   <div class="columns" id="ragged-mission">
     <div class="column col-xs-12 col-md-12 col-lg-10 col-10 mission-wrapper col-mx-auto text-center">
       <h1>Welcome to the Official Site of Ragged Mountain Resort!</h1>
-      <p class="text-large">With New Hampshire's only high-speed six passenger chairlift, 57 trails including: 17 glades, 3 terrain parks, and miles of groomers, Ragged has something to offer everyone. We are located in <a href="#ragged-directions">Danbury, New Hampshire</a>, just under two hours from Boston, so be sure to join us and Get Ragged!</p>
+      <p class="text-large">With New Hampshire's only high-speed six passenger chairlift, 57 trails including: 17 glades, 3 terrain parks, and miles of groomers, Ragged has something to offer everyone. We are located in <a href="#ragged-directions" id="ragged-directions-link">Danbury, New Hampshire</a>, just under ninety minutes from Boston, so be sure to join us and Get Ragged!</p>
     </div>
   </div>
 
   <!-- CONTAINER -->
   <div class="container">
+    <!-- MEDIA SLIDER -->
     <div class="columns" id="ragged-social-slider">
       <div class="column col-xs-12 col-md-12 col-lg-10 col-10 col-mx-auto text-center">
         <div class="divider mt-2"></div>
@@ -230,14 +231,17 @@
                   <img src="res/img/homepage/social-post.jpg" class="img-responsive" alt="Social post thumbnail">
                 </div>
                 <div class="card-header">
-                  <div class="card-title h5">Check Us Out on Social!</div>
-                  <div class="card-subtitle text-gray">Facebook, Instagram, YouTube!</div>
+                  <div class="card-title h5">Check Us Out on Social</div>
+                  <div class="card-subtitle text-gray">Facebook, Instagram, YouTube, and Twitter!</div>
                 </div>
                 <div class="card-body text-ellipsis">
-                  Ullamcorper varius parturient dolor suspendisse curabitur quisque curae vulputate ac parturient hendrerit penatibus habitant tristique per parturient diam consectetur ullamcorper parturient dapibus laoreet a cum a id ut et. Vestibulum sociis condimentum tristique himenaeos sem leo hendrerit volutpat vulputate mi maecenas nascetur parturient phasellus platea sit duis nibh dictumst a faucibus pretium curabitur maecenas et scelerisque sem. Vestibulum nam quam vestibulum luctus gravida purus nec torquent interdum vestibulum vestibulum habitant id parturient luctus adipiscing fusce vestibulum sed rutrum a suscipit. Sapien id penatibus pulvinar a vel dui fermentum ante vivamus class ullamcorper imperdiet a curabitur eu augue cubilia parturient. Tortor suscipit quam elit a metus ac a dis cum ad a scelerisque parturient nostra fermentum orci penatibus congue curabitur scelerisque a consequat ridiculus ac hendrerit.
+                  Click through to like and subscribe.
                 </div>
                 <div class="card-footer">
-                  <button class="btn btn-primary">Read More</button>
+                  <a href="#"><img src="res/img/social/fb.png" alt="" /></a>
+                  <a href="#"><img src="res/img/social/instagram.png" alt="" /></a>
+                  <a href="#"><img src="res/img/social/twitter.png" alt="" /></a>
+                  <a href="#"><img src="res/img/social/youtube.png" alt="" /></a>
                 </div>
               </span>
             </div>
@@ -249,14 +253,14 @@
                   <img src="res/img/homepage/blog-post.jpg" class="img-responsive" alt="Blog post thumbnail">
                 </div>
                 <div class="card-header">
-                  <div class="card-title h5">Blog Posty Post Goes Here</div>
-                  <div class="card-subtitle text-gray">A small amount of information.</div>
+                  <div class="card-title h5">Weekly Update</div>
+                  <div class="card-subtitle text-gray">Cleaning Up The Rails</div>
                 </div>
-                <div class="card-body text-ellipsis">
-                  Ullamcorper varius parturient dolor suspendisse curabitur quisque curae vulputate ac parturient hendrerit penatibus habitant tristique per parturient diam consectetur ullamcorper parturient dapibus laoreet a cum a id ut et. Vestibulum sociis condimentum tristique himenaeos sem leo hendrerit volutpat vulputate mi maecenas nascetur parturient phasellus platea sit duis nibh dictumst a faucibus pretium curabitur maecenas et scelerisque sem. Vestibulum nam quam vestibulum luctus gravida purus nec torquent interdum vestibulum vestibulum habitant id parturient luctus adipiscing fusce vestibulum sed rutrum a suscipit. Sapien id penatibus pulvinar a vel dui fermentum ante vivamus class ullamcorper imperdiet a curabitur eu augue cubilia parturient. Tortor suscipit quam elit a metus ac a dis cum ad a scelerisque parturient nostra fermentum orci penatibus congue curabitur scelerisque a consequat ridiculus ac hendrerit.
+                <div class="card-body text-ellipsis" id="blog-body">
+                  The off season is in full effect around here and we're attending to some essential upkeep around the resort. Here is Bryan Harper, Manager of the Ragged Mountain Parks with an update for you. Make sure you subscribe to our YouTube Channel to stay up to date on all that is happening around the resort!
                 </div>
                 <div class="card-footer">
-                  <button class="btn btn-primary">Read More</button>
+                  <button class="btn btn-primary" id="blog-modal-btn">Read More</button>
                 </div>
               </span>
             </div>
@@ -265,21 +269,41 @@
             <div class="column col-xs-12 col-md-12 col-lg-10 col-10 text-center disabled-card" id="video-card">
               <span class="card col-mx-auto">
                 <div class="card-image">
-                  <img src="res/img/homepage/video-post.jpg" class="img-responsive" alt="Video post thumbnail">
+                  <div class="video-responsive video-responsive-4-3">
+                    <iframe width="560" height="315" frameborder="0" src="https://www.youtube.com/embed/1-qUIrqMq1E?modestbranding=1&autohide=1&showinfo=0&controls=0" title="Back In the Day Snowboard Jam"></iframe>
+                  </div>
                 </div>
                 <div class="card-header">
                   <div class="card-title h5">Featured Video!</div>
                   <div class="card-subtitle text-gray">Watch us do something exciting!</div>
                 </div>
-                <div class="card-body text-ellipsis">
-                  Ullamcorper varius parturient dolor suspendisse curabitur quisque curae vulputate ac parturient hendrerit penatibus habitant tristique per parturient diam consectetur ullamcorper parturient dapibus laoreet a cum a id ut et. Vestibulum sociis condimentum tristique himenaeos sem leo hendrerit volutpat vulputate mi maecenas nascetur parturient phasellus platea sit duis nibh dictumst a faucibus pretium curabitur maecenas et scelerisque sem. Vestibulum nam quam vestibulum luctus gravida purus nec torquent interdum vestibulum vestibulum habitant id parturient luctus adipiscing fusce vestibulum sed rutrum a suscipit. Sapien id penatibus pulvinar a vel dui fermentum ante vivamus class ullamcorper imperdiet a curabitur eu augue cubilia parturient. Tortor suscipit quam elit a metus ac a dis cum ad a scelerisque parturient nostra fermentum orci penatibus congue curabitur scelerisque a consequat ridiculus ac hendrerit.
-                </div>
                 <div class="card-footer">
-                  <button class="btn btn-primary">Read More</button>
+                  
                 </div>
               </span> 
             </div>
 
+          </div>
+        </div>
+
+        <!-- BLOG MODAL -->
+        <div class="modal" id="blog-modal">
+          <a target="#close" class="modal-overlay blog-modal-close" aria-label="Close"></a>
+          <div class="modal-container">
+            <div class="modal-header">
+              <a target="#close" class="btn btn-clear float-right blog-modal-close" aria-label="Close"></a>
+              <div class="modal-title h5">Weekly Update</div>
+            </div>
+            <div class="modal-body">
+              <div class="content" id="modal-content">
+                <div class="video-responsive video-responsive-4-3">
+                  <iframe width="400px" height="300px" frameborder="0" src="https://www.youtube.com/embed/IjuU_UKB6vk" title="Ragged Parks summer update"></iframe>
+                </div>
+                <br />
+                <p>The off season is in full effect around here and we're attending to some essential upkeep around the resort. Here is Bryan Harper, Manager of the Ragged Mountain Parks with an update for you. Make sure you subscribe to our YouTube Channel to stay up to date on all that is happening around the resort!</p>
+              </div>
+            </div>
+            <div class="modal-footer"></div>
           </div>
         </div>
 
@@ -291,7 +315,7 @@
       <div class="column col-xs-12 col-md-12 col-12 promo-box">
         <img src="res/img/homepage/promo-1.jpg" class="" alt="Promo box image 1">
         <span class="promo-text">
-          <h1>GET YOUR TICKETS TODAY</h1>
+          <h1>GET YOUR TICKETS NOW</h1>
         </span>
       </div>
       <div class="column col-xs-12 col-md-12 col-4 promo-box">
@@ -482,6 +506,32 @@
               ,'transform':'translateX('+now+'px)'
           });
         }
+      });
+    }
+  });
+</script>
+
+<!-- blog modal handler -->
+<script>
+  $('#blog-modal-btn').bind('click', function(){
+    $('#blog-modal').toggleClass('active');
+  });
+
+  $('.blog-modal-close').bind('click', function(){
+    $('#blog-modal').toggleClass('active');
+  });
+</script>
+
+<!-- directions scroll -->
+<script>
+  $('#ragged-directions-link').on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      event.preventDefault();
+      let hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 300, function(){   
       });
     }
   });

@@ -180,6 +180,12 @@ footer{
 		}
 	}
 }
+.modal.active .modal-container {
+	max-width: 1080px;
+	.modal-body {
+		max-height: 90vh;
+	}
+}
 
 
 /*  CUSTOM  */

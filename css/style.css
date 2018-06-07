@@ -119,6 +119,11 @@ footer {
 .accordion-body .menu.menu-nav .submenu .accordion-header {
   color: #4A4A4A; }
 
+.modal.active .modal-container {
+  max-width: 1080px; }
+  .modal.active .modal-container .modal-body {
+    max-height: 90vh; }
+
 /*  CUSTOM  */
 #ragged-directions {
   max-width: 1080px;
