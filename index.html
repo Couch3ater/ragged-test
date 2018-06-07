@@ -10,6 +10,7 @@
 
   <!-- js pre-load -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
 
 
   <!-- google fonts -->
@@ -222,7 +223,7 @@
         </ul>
 
         <div class="container">
-          <div class="card-catalog">
+          <div class="card-catalog" style="transform: translateX(0px); background-position-x: 0px;">
 
             <!-- SOCIAL MEDIA CARD -->
             <div class="column col-xs-12 col-md-12 col-lg-10 col-10 text-center disabled-card" id="social-card">
@@ -450,6 +451,63 @@
     $('#blog-card').removeClass('disabled-card');
     $('#social-card').addClass('disabled-card');
     $('#video-card').addClass('disabled-card');
+  });
+
+  /*  swipe handler  */
+  $("#ragged-social-slider").swipe( {
+    //Generic swipe handler for all directions
+    swipeLeft:function(event, direction, distance, duration, fingerCount, fingerData) {
+      let cardWidth = $('#social-card').width() + parseInt($('#social-card').css('padding-left')) + parseInt($('#social-card').css('padding-right'));
+      $('.card-catalog').animate({backgroundPositionX:1},{
+        duration: 500,
+        step:function(now, fn){
+          if(now > 0) {
+            fn.start = cardWidth;
+            fn.end = 0;
+              $('.card-catalog').css({
+                 '-webkit-transform':'translateX('+now+'px)'
+                ,'-moz-transform':'translateX('+now+'px)'
+                ,'transform':'translateX('+now+'px)'
+            });
+          } else {
+            fn.start = now;
+            fn.end = -cardWidth;
+              $('.card-catalog').css({
+                 '-webkit-transform':'translateX('+now+'px)'
+                ,'-moz-transform':'translateX('+now+'px)'
+                ,'transform':'translateX('+now+'px)'
+            });
+          }
+        }
+      });
+    },
+    swipeRight:function(event, direction, distance, duration, fingerCount, fingerData) {
+      let cardWidth = $('#social-card').width() + parseInt($('#social-card').css('padding-left')) + parseInt($('#social-card').css('padding-right'));
+      $('.card-catalog').animate({backgroundPositionX:1},{
+        duration: 500,
+        step:function(now, fn){
+          if(now < 0) {
+            fn.start = -cardWidth;
+            fn.end = 0;
+              $('.card-catalog').css({
+                 '-webkit-transform':'translateX('+now+'px)'
+                ,'-moz-transform':'translateX('+now+'px)'
+                ,'transform':'translateX('+now+'px)'
+            });
+          } else {
+            fn.start = now;
+            fn.end = cardWidth;
+              $('.card-catalog').css({
+                 '-webkit-transform':'translateX('+now+'px)'
+                ,'-moz-transform':'translateX('+now+'px)'
+                ,'transform':'translateX('+now+'px)'
+            });
+          }
+        }
+      });
+    },
+    //default is 75px,
+     threshold:10
   });
 
   /*  video tab click  */
