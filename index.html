@@ -197,9 +197,9 @@
 
   <!-- BEFORE CONTAINER -->
   <div class="columns" id="ragged-mission">
-    <div class="column col-xs-12 col-md-12 col-lg-10 col-10">
-      <h1>&nbsp;</h1>
-      &nbsp;
+    <div class="column col-xs-12 col-md-12 col-lg-10 col-10 mission-wrapper col-mx-auto text-center">
+      <h1>Welcome to the Official Site of Ragged Mountain Resort!</h1>
+      <p class="text-large">With New Hampshire's only high-speed six passenger chairlift, 57 trails including: 17 glades, 3 terrain parks, and miles of groomers, Ragged has something to offer everyone. We are located in <a href="#ragged-directions">Danbury, New Hampshire</a>, just under two hours from Boston, so be sure to join us and Get Ragged!</p>
     </div>
   </div>
 
@@ -207,6 +207,7 @@
   <div class="container">
     <div class="columns" id="ragged-social-slider">
       <div class="column col-xs-12 col-md-12 col-lg-10 col-10 col-mx-auto text-center">
+        <div class="divider mt-2"></div>
         <ul class="tab tab-block">
           <li class="tab-item" id="social-tab">
             <a href="javascript:void(0);">Social</a>
@@ -222,6 +223,7 @@
         <div class="container">
           <div class="card-catalog">
 
+            <!-- SOCIAL MEDIA CARD -->
             <div class="column col-xs-12 col-md-12 col-lg-10 col-10 text-center disabled-card" id="social-card">
               <span class="card col-mx-auto">
                 <div class="card-image">
@@ -240,6 +242,7 @@
               </span>
             </div>
 
+            <!-- BLOG POST CARD -->
             <div class="column col-xs-12 col-md-12 col-lg-10 col-10 text-center" id="blog-card">
               <span class="card col-mx-auto">
                 <div class="card-image">
@@ -258,6 +261,7 @@
               </span>
             </div>
 
+            <!-- YOUTUBE CARD -->
             <div class="column col-xs-12 col-md-12 col-lg-10 col-10 text-center disabled-card" id="video-card">
               <span class="card col-mx-auto">
                 <div class="card-image">
@@ -282,6 +286,7 @@
       </div>
     </div>
 
+    <!-- PROMO BUTTONS -->
     <div class="columns promo-box-container col-mx-auto" id="ragged-promo-buttons">
       <div class="column col-xs-12 col-md-12 col-12 promo-box">
         <img src="res/img/homepage/promo-1.jpg" class="" alt="Promo box image 1">
@@ -306,6 +311,42 @@
         <span class="promo-text">
           <h4>MISSION AFFORDABLE SEASON PASS</h4>
         </span>
+      </div>
+      <div class="column col-xs-12 col-md-12 col-12 mt-2">
+        <div class="divider mt-2"></div>
+      </div>
+    </div>
+
+    <!-- DIRECTIONS -->
+    <div class="columns col-mx-auto" id="ragged-directions">
+      <div class="column col-xs-12 col-12 col-mx-auto text-center map-label">
+        <h1>Directions</h1>
+        <div class="divider mt-2"></div>
+      </div>
+      <div class="column col-xs-12 col-md-12 col-6">
+        <div id="map"></div>
+      </div>
+      <div class="column col-xs-12 col-md-12 col-6 col-mx-auto" id="map-info">
+        <div>
+          <h3>Ragged Mountain Resort Location</h3>
+          <p><span class="text-bold text-large">Address:</span> 620 Ragged Mountain Road Danbury, NH 03230</p>
+
+          <p>Ragged Mountain Resort is conveniently located in the town of Danbury, NH. Just a short drive from Boston, Manchester, or parts north, getting here is quick and easy!</p>
+          <ul>
+            <li>Take I-93 to Exit 23.</li>
+            <li>Merge onto NH Route 104.</li>
+            <li>Continue through the Town of Bristol until you reach our access road.</li>
+          </ul>
+
+          <p>From the South, you can take an alternate route through the heart of Danbury!</p>
+          <ul>
+            <li>Take I-93N to Exit 17.</li>
+            <li>Merge onto NH Route 4W.</li>
+            <li>Turn right onto NH Route 104.</li>
+            <li>Continue until you reach our access road.</li>
+          </ul>
+          <sup>* GPS route not advised</sup>
+        </div>
       </div>
     </div>
   </div>
@@ -446,6 +487,23 @@
   });
 </script>
 
+<!-- google map -->
+<script>
+  // initialize google map
+  function initMap() {
+    // ragged's coordinates
+    let ragged = {lat: 43.485429, lng: -71.8442777};
+    // new map centered on ragged
+    let map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 7, center: ragged});
+    // marker placed on ragged
+    let marker = new google.maps.Marker({position: ragged, map: map});
+  }  
+</script>
+
+<!-- google api key -->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoZDp2gScD1v-rrl0wOf9Kfb4mhZ59thE&callback=initMap">
+</script>
 
 </body>
 </html>
