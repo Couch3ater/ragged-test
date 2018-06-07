@@ -141,6 +141,10 @@ footer {
   #ragged-directions #map-info {
     display: flex;
     align-items: center; }
+    #ragged-directions #map-info a {
+      color: #E3782E; }
+    #ragged-directions #map-info a:hover {
+      color: #E3782E; }
 
 #ragged-mission {
   margin: 0;

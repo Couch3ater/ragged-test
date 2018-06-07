@@ -208,6 +208,12 @@ footer{
 	#map-info {
 		display: flex;
 		align-items: center;
+		a {
+			color: $ragged-orange;
+		}
+		a:hover {
+			color: $ragged-orange;
+		}
 	}
 }
 #ragged-mission {
