@@ -116,9 +116,11 @@ footer{
 			color: #FFF;
 			font-weight: 600;
 			border: none;
+			height: 100%;
 		}
-		a.btn.btn-link:hover {
-			border-top: 5px solid #FFFFFF;
+		a.btn.btn-link:hover, a.btn.btn-link:focus {
+			border-bottom: 7px solid #FFFFFF;
+			background-color: $dark-orange;
 		}
 	}
 	.navbar-section{
@@ -177,6 +179,12 @@ footer{
 		}
 		.submenu .accordion-header {
 			color: $dark-grey;
+		}
+		.submenu.accordion .accordion-header .icon {
+			transform: rotate(0deg);
+		}
+		.submenu.accordion[open] .accordion-header .icon {
+			transform: rotate(90deg);
 		}
 	}
 }

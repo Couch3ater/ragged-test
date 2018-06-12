@@ -71,9 +71,11 @@ footer {
       padding: 2rem 0.4rem 0.35rem 0.4rem;
       color: #FFF;
       font-weight: 600;
-      border: none; }
-    .navbar .navbar-section a.btn.btn-link:hover {
-      border-top: 5px solid #FFFFFF; }
+      border: none;
+      height: 100%; }
+    .navbar .navbar-section a.btn.btn-link:hover, .navbar .navbar-section a.btn.btn-link:focus {
+      border-bottom: 7px solid #FFFFFF;
+      background-color: #CE5C0D; }
   .navbar .navbar-section {
     justify-content: center; }
   .navbar .navbar-section:not(:first-child):last-child {
@@ -118,6 +120,10 @@ footer {
   background-color: #CE5C0D; }
 .accordion-body .menu.menu-nav .submenu .accordion-header {
   color: #4A4A4A; }
+.accordion-body .menu.menu-nav .submenu.accordion .accordion-header .icon {
+  transform: rotate(0deg); }
+.accordion-body .menu.menu-nav .submenu.accordion[open] .accordion-header .icon {
+  transform: rotate(90deg); }
 
 .modal.active .modal-container {
   max-width: 1080px; }
@@ -209,8 +215,7 @@ footer {
   width: 100%;
   display: flex;
   justify-content: center;
-  overflow: visible;
-  background-position-x: 0; }
+  overflow: visible; }
   .card-catalog #social-card {
     max-width: 750px;
     margin-top: 1rem; }
